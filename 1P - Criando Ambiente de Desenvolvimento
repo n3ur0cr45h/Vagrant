@@ -1,0 +1,35 @@
+# Feito dentro do WSL 
+
+1. apt install update -y && apt install upgrade -y && apt install vagrant 
+
+2. mkdir /mnt/c/Users/Users/(usuario)/Desktop/Vagrant/projeto_ubuntu && cd /mnt/c/Users/Users/(usuario)/Desktop/Vagrant/projeto_ubuntu
+
+3. export export VAGRANT_WSL_ENABLE_WINDOWS_ACCESS="1" && export PATH="$PATH:/mnt/c/'Program Files'/Oracle/VirtualBox"
+
+4. vagrant init 
+
+5. vi /mnt/c/Users/(usuario)/Desktop/Vagrant/projeto_ubuntu && cd /mnt/c/Users/(usuario)/Desktop/Vagrant/projeto_ubuntu/Vagrantfile
+
+		Vagrant configure("2") do |config|
+		  config.vm.box = "ubuntu/bionic64"
+		  config.vm.hostname = "ambientedev"
+		  config.vm.network "private_network", type: "static", ip:"192.168.56.103"
+		  config.vm.synced_folder ".", "/vagrant", type: "virtualbox"
+		  
+		  config.vm.provider "virtualbox" do |vb|
+		     vb.memory = "512"
+			 vb.cpus = 1 
+		  end 
+		  
+		  config.vm.provision "shell", inline: <<-SHELL
+		     apt-get update
+             apt-get install -y build-essential git
+          SHELL
+
+		end		  
+		
+6. vagrant up 
+
+7. vagrant status 
+
+8. vagrant ssh 
