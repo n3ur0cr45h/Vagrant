@@ -15,7 +15,7 @@
   
 |  ID  | Título                    | Descrição                                                                        | 
 | ---- | ------------------------- | ---------------------------------------------------------------------------------| 
-|  01  | Criando Ambiente Dev.     | Criar um Ambiente Dev. com o Vagrant             |
+|  01  | Ambiente Dev.     | Criar um Ambiente Dev. com o Vagrant             |
 
 
 
