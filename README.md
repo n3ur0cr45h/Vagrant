@@ -17,7 +17,7 @@
 | ---- | ------------------------- | ---------------------------------------------------------------------------------| 
 |  01  | Ambiente Dev.     | Criar um Ambiente Dev. com o Vagrant             |
 |  02  | Servidor Web Automatizado    | Automatizar a Criação de um Servidor Web            |
-
+|  03  | Cluster de Servers    | Providenciar um Cluster de 3 servidores, com Apache2 e Tester            |
 
 </div> 
 </details>
