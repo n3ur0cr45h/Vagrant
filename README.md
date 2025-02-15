@@ -16,7 +16,7 @@
 |  ID  | Título                    | Descrição                                                                        | 
 | ---- | ------------------------- | ---------------------------------------------------------------------------------| 
 |  01  | Ambiente Dev.     | Criar um Ambiente Dev. com o Vagrant             |
-|  02  | Servidor Web Automatizado    | Criar um ServidorWeb automatizado             |
+|  02  | Servidor Web Automatizado    | Automatizar a Criação de um Servidor Web            |
 
 
 </div> 
