@@ -1,0 +1,30 @@
+Feito no PowerShell
+
+
+1. mkdir multi_provider; cd multi_provider; vagrant init 
+
+2. Vagrantfile 
+
+Vagrant.configure("2") do |config|
+  
+
+  config.vm.define "virtualbox_vm" do |vb|
+    vb.vm.box = "ubuntu/bionic64" 
+    vb.vm.provider "virtualbox" do |v|
+      v.memory = "1024"  
+    end
+  end
+  
+
+  config.vm.define "docker_container" do |d|
+    d.vm.provider "docker" do |docker|
+      docker.image = "ubuntu:20.04"  
+      docker.name = "ubuntu_container"  
+    end
+  end
+
+end
+
+3. vagrant up 
+
+Obs.: Docker precisa estar instalado na máquina Host, e também ativo. 
