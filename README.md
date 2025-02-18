@@ -29,7 +29,7 @@
 |  04  | Ambiente com Container / Docker   | Gerar uma VM com Docker, Automatizando a Criação de Container          |
 |  05  | Ambientes Multi-Provedores   | Prover um ambiente de cada provedor (Docker e VirtualBox)          |
 |  06  | Infraestrutura como Código (IaC)  | Provisionar 1 Servidor (CentOS) e 2 Guests, com Configuração de Usuários   |
-
+|  07  | Ambiente para Automação de Testes  | Provisionar servidor para Automação de Testes   |
 </div> 
 </details>
 
