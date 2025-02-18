@@ -31,6 +31,7 @@
 |  06  | Infraestrutura como Código (IaC)  | Provisionar 1 Servidor (CentOS) e 2 Guests, com Configuração de Usuários   |
 |  07  | Ambiente para Automação de Testes  | Provisionar servidor para Automação de Testes   |
 |  08  | Ambiente de Provisionamento  | Criar um servidor com as ferramentas para provisionamentos   |
+|  09  | Ambiente Legado  | Prover um ambiente com S.O legado e aplicações legadas   |
 
 </div> 
 </details>
