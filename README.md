@@ -30,7 +30,7 @@
 |  05  | Ambientes Multi-Provedores   | Prover um ambiente de cada provedor (Docker e VirtualBox)          |
 |  06  | Infraestrutura como Código (IaC)  | Provisionar 1 Servidor (CentOS) e 2 Guests, com Configuração de Usuários   |
 |  07  | Ambiente para Automação de Testes  | Provisionar servidor para Automação de Testes   |
-|  08  | Ambiente de Provisionamento  | Criar um servidor com as ferramentas para provisionamentos posteriores   |
+|  08  | Ambiente de Provisionamento  | Criar um servidor com as ferramentas para provisionamentos   |
 
 </div> 
 </details>
