@@ -28,7 +28,7 @@
 |  03  | Cluster de Servers    | Providenciar um Cluster de 3 servidores, com Apache2 e Tester            |
 |  04  | Ambiente com Container / Docker   | Gerar uma VM com Docker, Automatizando a Criação de Container          |
 |  05  | Ambientes Multi-Provedores   | Prover um ambiente de cada provedor (Docker e VirtualBox)          |
-|  06  | Infraestrutura como Código (IaC)  | Provisionar 1 Servidor e 2 Guests, com Configuração e Teste de Rede     |
+|  06  | Infraestrutura como Código (IaC)  | Provisionar 1 Servidor (CentOS) e 2 Guests, com Configuração de Usuários   |
 
 </div> 
 </details>
