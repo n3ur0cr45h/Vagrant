@@ -33,4 +33,4 @@ end
 
 3. vagrant up 
 
-4. vagrant halt; vagrant destroy -y 
+4. vagrant halt; vagrant destroy -f
