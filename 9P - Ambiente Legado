@@ -1,0 +1,36 @@
+
+1. mkdir legacy; cd legacy; vagrant init 
+
+2. Vagrantfile 
+
+Vagrant.configure("2") do |config|
+  
+  config.vm.box = "ubuntu/xenial64"  
+
+  
+  config.vm.hostname = "legacy"
+
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048"   
+    vb.cpus = 2          
+    vb.name = "Ambiente_Legacy_VM"
+  end
+
+
+  config.vm.provision "shell", inline: <<-SHELL
+
+    sudo apt-get update && sudo apt-get install -y openjdk-8-jdk apache2 git curl 
+         
+    echo "export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64" >> ~/.bashrc
+    echo "export PATH=\$JAVA_HOME/bin:\$PATH" >> ~/.bashrc
+    source ~/.bashrc
+
+    sudo systemctl start apache2 && sudo systemctl enable apache2 
+
+  SHELL
+end
+
+3. vagrant up 
+
+4. vagrant halt; vagrant destroy -y 
