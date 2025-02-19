@@ -32,6 +32,7 @@
 |  07  | Ambiente Automação de Testes  | Provisionar servidor para Automação de Testes   |
 |  08  | Ambiente de Provisionamento  | Criar um servidor com as ferramentas para provisionamentos   |
 |  09  | Ambiente Legado  | Prover um ambiente com S.O legado e aplicações legadas   |
+|  10  | Ambiente CI CD  | Gerar um Ambiente com Ferramentas de CI / CD   |
 
 </div> 
 </details>
