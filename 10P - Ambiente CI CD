@@ -1,1 +1,31 @@
+Vagrant.configure("2") do |config|
+ config.vm.define "cicd" do |cicd|
+  cicd.vm.box = "unclebob/ubuntu2404"
+  cicd.vm.hostname = "cicd"
 
+  
+  cicd.vm.provider "virtualbox" do |vb|
+    vb.memory = "2048"
+	vb.cpus = 2
+	vb.name = "CI-CD"
+  end
+
+  cicd.vm.network "private_network", type: "static", ip: "192.168.56.101"
+
+  cicd.vm.provision "shell", inline: <<-SHELL
+    sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt install java-common -y 
+	
+	# TeamCity 
+	sudo adduser teamcity 
+	sudo wget -P /opt https://download.jetbrains.com/teamcity/TeamCity-2022.10.1.tar.gz
+	sudo tar xfz /opt/TeamCity-2022.10.1.tar.gz
+	
+	sudo wget -P /opt https://corretto.aws/downloads/latest/amazon-corretto-11-x64-linux-jdk.deb
+	sudo dpkg --install /opt/amazon-corretto-11-x64-linux-jdk.deb
+
+    # Docker e Ansible 
+    sudo apt-get install -y docker.io ansible 
+	
+  SHELL
+  end
+end
