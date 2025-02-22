@@ -8,7 +8,7 @@
 <div align="Right">
 <h6>
 <strong>Participação de Mercado</strong>
-<br><strong>Empresas</strong>: 20%
+<br><strong>Empresas</strong>: 10%
 </h6>  
 </div>
 
