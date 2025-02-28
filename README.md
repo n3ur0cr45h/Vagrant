@@ -7,6 +7,13 @@
 
 <div align="Right">
 <h6>
+<strong>Documentação</strong>
+<br><strong>https://developer.hashicorp.com/vagrant/docs</strong>
+</h6>  
+</div>
+
+<div align="Right">
+<h6>
 <strong>Participação de Mercado</strong>
 <br><strong>Empresas</strong>: 10%
 </h6>  
