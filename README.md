@@ -7,8 +7,7 @@
 
 <div align="Right">
 <h6>
-<strong>Documentação</strong>
-<br><strong>https://developer.hashicorp.com/vagrant/docs</strong>
+<strong><a href="https://developer.hashicorp.com/vagrant/docs">Documentação</a></strong>
 </h6>  
 </div>
 
